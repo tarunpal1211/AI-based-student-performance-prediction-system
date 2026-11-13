@@ -1,0 +1,48 @@
+# .gitignore
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Database & local secrets
+*.db
+*.db.bak
+.env
+.env.local
+
+# Data (keep raw data out of the repo — too large)
+data/raw/
+
+# Trained models (regenerate with src/train.py)
+models/*.joblib
+
+# Python & Testing
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Streamlit & frontends
+.streamlit/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/

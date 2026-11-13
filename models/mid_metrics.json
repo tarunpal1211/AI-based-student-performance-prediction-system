@@ -1,0 +1,73 @@
+{
+  "accuracy": 0.8133971291866029,
+  "macro_f1": 0.7805252759109796,
+  "at_risk_recall": 0.9,
+  "per_class": {
+    "At-Risk": {
+      "precision": 0.5294117647058824,
+      "recall": 0.9,
+      "f1": 0.6666666666666666,
+      "support": 20.0
+    },
+    "Needs Improvement": {
+      "precision": 0.9690721649484536,
+      "recall": 0.7230769230769231,
+      "f1": 0.8281938325991189,
+      "support": 130.0
+    },
+    "Performing Well": {
+      "precision": 0.7435897435897436,
+      "recall": 0.9830508474576272,
+      "f1": 0.8467153284671532,
+      "support": 59.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      18,
+      2,
+      0
+    ],
+    [
+      16,
+      94,
+      20
+    ],
+    [
+      0,
+      1,
+      58
+    ]
+  ],
+  "best_model": "Logistic Regression",
+  "feature_set": "mid",
+  "cv_summary": [
+    {
+      "model": "Logistic Regression",
+      "cv_accuracy": 0.8335329341317366,
+      "cv_accuracy_std": 0.01030218594855405,
+      "cv_f1_macro": 0.7988804678068592,
+      "cv_f1_macro_std": 0.01721414482713533,
+      "cv_at_risk_recall": 0.9,
+      "cv_at_risk_recall_std": 0.049999999999999996
+    },
+    {
+      "model": "Decision Tree",
+      "cv_accuracy": 0.8155688622754491,
+      "cv_accuracy_std": 0.02253279966733745,
+      "cv_f1_macro": 0.7797282236013745,
+      "cv_f1_macro_std": 0.032218584012829454,
+      "cv_at_risk_recall": 0.8375,
+      "cv_at_risk_recall_std": 0.075
+    },
+    {
+      "model": "Random Forest",
+      "cv_accuracy": 0.858682634730539,
+      "cv_accuracy_std": 0.013966351843940853,
+      "cv_f1_macro": 0.7999590365739949,
+      "cv_f1_macro_std": 0.024562983492088988,
+      "cv_at_risk_recall": 0.6125,
+      "cv_at_risk_recall_std": 0.09185586535436917
+    }
+  ]
+}
